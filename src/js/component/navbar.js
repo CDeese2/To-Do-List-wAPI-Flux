@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
+			<div>
+				<span className="navbar-brand mb-0 h1">To Do List with API & Flux</span>
+			</div>
 			<div className="ml-auto">
-				<Link to="/demo">
+				{/* <Link to="/demo">
 					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
+				</Link> */}
 			</div>
 		</nav>
 	);

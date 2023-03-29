@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 import { Context } from "../store/appContext";
 
-import "../../styles/demo.css";
+import "../../styles/index.css";
 
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
+//CD Added button to add to the to do list (todoList)
 	return (
 		<div className="container">
 			<ul className="list-group">
@@ -29,6 +30,9 @@ export const Demo = () => {
 							) : null}
 							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
 								Change Color
+							</button>
+							<button className="btn btn-success" onClick={() => actions.todoList(index, "Walk the dog")}>
+								list
 							</button>
 						</li>
 					);

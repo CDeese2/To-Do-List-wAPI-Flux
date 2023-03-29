@@ -1,3 +1,76 @@
 /* 
     General Styles
 */
+
+/* 
+
+    You can write your own styles here...
+    
+    
+    ...Or you can use the import command to include 
+    other sylesheets into your bunde as well, e.j:
+    
+    import 'relative/path/to/stylesheet.scss';
+
+*/
+
+input:focus{
+    border: 0;
+}
+
+body{
+    text-align: center;
+}
+.todo-header {
+    margin: 5px;
+    color: rgb(28, 141, 179);
+}
+
+.todo-container{
+    border: 5px solid lightblue;
+    width: 500px;
+    margin: auto;
+}
+
+.todo-container-header{
+    background-color: lightblue;
+}
+
+.todo-container-header span{
+    background-color: lightblue;
+    border-bottom: 1px solid lightblue;
+    padding: 10px;
+}
+
+.delete-button{
+    color:red;
+    margin-left: auto;
+    margin-right: 25px;
+    visibility: hidden;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    border-bottom: 1px solid lightblue;
+    padding: 1rem;
+    width: 100%;
+}
+
+li:last-child{
+    border-bottom: 1px solid lightblue;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+li:hover span{
+    visibility: visible;
+}
+
+input{
+    border: none;
+    width: 100%;
+    border-bottom: 5px solid lightblue;
+}
